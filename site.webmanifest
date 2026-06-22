@@ -1,0 +1,12 @@
+{
+  "name": "Trimly — Great hair starts here",
+  "short_name": "Trimly",
+  "description": "AI hairstyle match and salon discovery. Find styles that suit your face and the salons that do them.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F6FB",
+  "theme_color": "#5B2EE6",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
