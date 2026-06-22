@@ -282,3 +282,96 @@ ul { list-style: none; }
   * { animation: none !important; scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* ============================================================
+   v2 additions — richer sections merged from new mockup
+   ============================================================ */
+
+/* Hero social proof */
+.hero-social { display: flex; align-items: center; gap: 14px; margin-top: 28px; }
+.avatars { display: flex; }
+.avatars .av { width: 38px; height: 38px; border-radius: 50%; border: 2.5px solid var(--bg); margin-left: -10px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 14px; }
+.avatars .av:first-child { margin-left: 0; }
+.hero-social .rate b { font-weight: 800; }
+.hero-social .rate { font-size: 13.5px; color: var(--muted); font-weight: 600; }
+.hero-social .stars { color: var(--star); letter-spacing: 1px; }
+
+/* In-phone result extras */
+.app-result { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 12px; margin-top: 12px; box-shadow: var(--shadow-sm); }
+.app-result .rrow { display: flex; align-items: center; justify-content: space-between; }
+.app-result .rrow small { color: var(--muted-2); font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: .05em; }
+.app-result .shape { font-size: 18px; font-weight: 800; }
+.app-result .mtag { background: var(--success-bg); color: var(--success); font-weight: 800; font-size: 11px; padding: 3px 9px; border-radius: 100px; }
+.app-find { margin-top: 12px; background: var(--grad); color: #fff; text-align: center; font-weight: 800; font-size: 11.5px; padding: 10px; border-radius: 11px; }
+
+/* How it works — numbered cards */
+.howcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.howcard { position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px; overflow: hidden; transition: transform .22s ease, box-shadow .22s ease; }
+.howcard:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.howcard .hc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.howcard .hc-ic { width: 52px; height: 52px; border-radius: 15px; display: grid; place-items: center; }
+.howcard .hc-num { font-size: 46px; font-weight: 800; letter-spacing: -.03em; color: var(--tint-2); line-height: 1; }
+.howcard h3 { font-size: 19px; font-weight: 800; margin-bottom: 9px; }
+.howcard p { color: var(--muted); font-size: 15px; }
+
+/* Style gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.gtile { border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--line); background: #fff; transition: transform .2s ease, box-shadow .2s ease; }
+.gtile:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.gtile .gt-img { aspect-ratio: 4/3.4; position: relative; display: grid; place-items: center; }
+.gtile .gt-img .gt-letter { font-size: 40px; font-weight: 800; color: rgba(255,255,255,.55); }
+.gtile .gt-tag { position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,.82); backdrop-filter: blur(4px); color: var(--ink); font-weight: 700; font-size: 11px; padding: 4px 10px; border-radius: 100px; }
+.gtile .gt-body { padding: 13px 14px 15px; }
+.gtile .gt-body b { font-size: 15px; font-weight: 800; display: block; }
+.gtile .gt-body span { font-size: 12.5px; color: var(--muted-2); font-weight: 600; }
+
+/* Salons section */
+.salons { background: linear-gradient(180deg, var(--bg) 0%, #fff 100%); }
+.salons-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: center; }
+.salons-copy h2 { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; letter-spacing: -.02em; line-height: 1.14; margin: 16px 0 14px; }
+.salons-copy p { color: var(--muted); font-size: 17px; margin-bottom: 22px; }
+.pill-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.pill-row .pill { font-weight: 700; font-size: 13.5px; padding: 9px 16px; border-radius: 100px; background: #fff; border: 1.5px solid var(--line); color: var(--muted); }
+.pill-row .pill.on { background: var(--primary); color: #fff; border-color: var(--primary); }
+.salon-list { display: grid; gap: 14px; }
+.salon-row { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 16px 18px; box-shadow: var(--shadow-sm); transition: transform .18s ease, box-shadow .18s ease; }
+.salon-row:hover { transform: translateX(4px); box-shadow: var(--shadow); }
+.salon-av { width: 50px; height: 50px; border-radius: 13px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 20px; flex: none; }
+.salon-info { flex: 1; min-width: 0; }
+.salon-info .sname { display: flex; align-items: center; gap: 9px; font-weight: 800; font-size: 16px; }
+.salon-info .styp { font-size: 13px; color: var(--muted-2); font-weight: 600; }
+.salon-info .smeta { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; color: var(--muted); margin-top: 3px; }
+.salon-info .smeta .star { color: var(--star); }
+.salon-tag { font-size: 10.5px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; padding: 3px 8px; border-radius: 6px; }
+
+/* Testimonials */
+.tcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.tcard { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 26px; transition: transform .2s ease, box-shadow .2s ease; }
+.tcard:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.tcard .tstars { color: var(--star); letter-spacing: 2px; font-size: 15px; margin-bottom: 14px; }
+.tcard blockquote { font-size: 15.5px; color: var(--ink); font-weight: 600; line-height: 1.6; }
+.tcard .tauthor { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+.tcard .tauthor .ta-av { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 800; flex: none; }
+.tcard .tauthor b { display: block; font-size: 14.5px; font-weight: 800; }
+.tcard .tauthor span { font-size: 12.5px; color: var(--muted-2); font-weight: 600; }
+
+/* Community coming-soon band */
+.community-band { padding: 0 0 96px; }
+.community-inner { background: linear-gradient(135deg, var(--tint) 0%, var(--tint-2) 100%); border: 1px solid var(--tint-2); border-radius: 30px; padding: 52px 56px; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.community-inner .badge-soon { display: inline-block; margin-bottom: 16px; }
+.community-inner h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; letter-spacing: -.02em; line-height: 1.15; margin-bottom: 12px; }
+.community-inner p { color: var(--muted); font-size: 16px; max-width: 560px; }
+.community-ic { width: 96px; height: 96px; border-radius: 26px; background: var(--grad); display: grid; place-items: center; flex: none; box-shadow: var(--shadow); }
+
+/* Responsive — v2 sections */
+@media (max-width: 940px) {
+  .howcards { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .salons-grid { grid-template-columns: 1fr; gap: 32px; }
+  .tcards { grid-template-columns: 1fr; }
+  .community-inner { flex-direction: column; text-align: center; padding: 40px 28px; }
+}
+@media (max-width: 560px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .hero-social { flex-wrap: wrap; }
+}
