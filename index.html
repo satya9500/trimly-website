@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#5B2EE6" />
 
-  <title>Trimly — Great hair starts here | AI hairstyle match & salon discovery</title>
-  <meta name="description" content="Trimly is the AI hairstyle app. Snap a photo, find the cuts that suit your face shape, try them on instantly, and discover top-rated salons near you. Free on iOS & Android." />
-  <meta name="keywords" content="Trimly, hairstyle app, AI hairstyle try-on, hair salon near me, face shape hairstyle, salon discovery, hair makeover app, virtual hairstyle" />
+  <title>Trimly — AI Hairstyle Try-On: See What Hairstyle Suits Your Face</title>
+  <meta name="description" content="Not sure what hairstyle would suit you? Trimly's AI reads your face shape, matches flattering hairstyles for women and men, and tries them on your own photo — then finds salons near you. Free on iOS & Android." />
+  <meta name="keywords" content="AI hairstyle, AI hairstyle try-on, what hairstyle suits me, what hairstyle would look good on me, hairstyle for my face shape, best hairstyles for round face, best hairstyles for oval face, hairstyle app, virtual hairstyle try-on, hairstyle generator, men's hairstyles, women's hairstyles" />
   <meta name="author" content="Trimly" />
   <link rel="canonical" href="https://trimly.info/" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -57,10 +57,45 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+      { "@type": "Question", "name": "What hairstyle would look good on me?", "acceptedAnswer": { "@type": "Answer", "text": "The most flattering hairstyle depends on your face shape, hair type and the look you want. Trimly takes the guesswork out: snap a selfie and its AI reads your face shape, recommends flattering hairstyles for women and men — each with a confidence score — and renders any look on your own photo so you can see what suits you before you commit." } },
+      { "@type": "Question", "name": "What are the best hairstyles for my face shape?", "acceptedAnswer": { "@type": "Answer", "text": "Oval faces suit almost any style; round faces look great with height and long layers; square faces are softened by waves and side-swept styles; heart faces are balanced by chin-length cuts and curtain bangs; long faces suit a fringe and width at the sides. See our full guide to hairstyles for your face shape, or let Trimly match them to you automatically." } },
       { "@type": "Question", "name": "How does AI Style Match work?", "acceptedAnswer": { "@type": "Answer", "text": "You take a photo of your face. Trimly analyses your face shape, recommends flattering hairstyles, and generates a realistic try-on of any look on your own face — so you can see it before you sit in the chair." } },
       { "@type": "Question", "name": "Is Trimly free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Trimly is free to download and use on iOS and Android. Style discovery, salon browsing, and My Cuts are all included." } },
       { "@type": "Question", "name": "Where is Trimly available?", "acceptedAnswer": { "@type": "Answer", "text": "Trimly is launching across India with a curated catalogue of over 4,500 local salons. More cities are being added all the time." } },
       { "@type": "Question", "name": "Is my photo kept private?", "acceptedAnswer": { "@type": "Answer", "text": "Your face photo is processed for analysis and deleted afterwards — it is never used for anything else. AI Style Match is available to users 18 and over, with explicit consent, in line with India's DPDP Act." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Trimly",
+    "url": "https://trimly.info/",
+    "description": "AI hairstyle try-on and face-shape match. See what hairstyle suits you, then find top-rated salons near you."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Trimly",
+    "url": "https://trimly.info/",
+    "logo": "https://trimly.info/og-image.png",
+    "email": "hello@trimly.info",
+    "areaServed": { "@type": "Country", "name": "India" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to find a hairstyle that suits your face shape",
+    "description": "Use Trimly to discover flattering hairstyles for your face shape and try them on with AI before you visit a salon.",
+    "step": [
+      { "@type": "HowToStep", "name": "Scan", "text": "Take or upload a photo. Trimly reads your face shape across five types — oval, round, square, heart or long." },
+      { "@type": "HowToStep", "name": "Match", "text": "Get hairstyles hand-picked to flatter your features, each with a confidence score, for women and men." },
+      { "@type": "HowToStep", "name": "Discover", "text": "Try any look on your own photo with AI, then find top-rated salons nearby that can do it." }
     ]
   }
   </script>
@@ -269,10 +304,14 @@
             </ul>
           </div>
           <div class="spotlight-visual">
-            <div class="face-tile before" style="background:linear-gradient(160deg,#3a3550,#241A4D)">
+            <div class="face-tile before">
+              <img src="assets/styles/curtain-bangs.jpg" alt="Your photo before the AI hairstyle try-on" loading="lazy" decoding="async" />
+              <span class="ft-grad ft-grad-dark"></span>
               <span class="badge">Your photo</span>
             </div>
-            <div class="face-tile" style="background:linear-gradient(160deg,#6A3CF0,#A98CFF)">
+            <div class="face-tile">
+              <img src="assets/styles/sleek-lob.jpg" alt="AI hairstyle try-on rendered on your own photo" loading="lazy" decoding="async" />
+              <span class="ft-grad ft-grad-ai"></span>
               <span class="badge tag-ai">✨ AI try-on</span>
             </div>
           </div>
@@ -286,7 +325,7 @@
         <div class="section-head reveal">
           <span class="eyebrow">Style gallery</span>
           <h2>A look for every face</h2>
-          <p>From soft curtain bangs to a sharp textured crop — looks for women and men, each tagged with the face shapes it flatters most.</p>
+          <p>From soft curtain bangs to a sharp textured crop — looks for women and men, each tagged with the face shapes it flatters most. <a href="hairstyles-for-your-face-shape.html" class="inline-link">Which hairstyle suits your face? →</a></p>
         </div>
         <div class="gallery-grid">
           <article class="gtile reveal"><div class="gt-img"><picture><source type="image/webp" srcset="assets/styles/curtain-bangs.webp" /><img src="assets/styles/curtain-bangs.jpg" alt="Curtain bangs hairstyle" width="600" height="800" loading="lazy" decoding="async" /></picture><span class="gt-tag">Oval</span></div><div class="gt-body"><b>Curtain Bangs</b><span>Best for Oval, Round, Heart</span></div></article>
@@ -479,6 +518,14 @@
         </div>
         <div class="faq-list">
           <details class="faq-item reveal">
+            <summary>What hairstyle would look good on me? <span class="plus">+</span></summary>
+            <div class="faq-body">The most flattering hairstyle comes down to your face shape, hair type and the look you're after. Rather than guess, snap a selfie in Trimly — its AI reads your face shape and suggests flattering hairstyles for women and men, each with a confidence score, then renders any look on your own photo. <a href="hairstyles-for-your-face-shape.html">See our face-shape hairstyle guide →</a></div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>What are the best hairstyles for my face shape? <span class="plus">+</span></summary>
+            <div class="faq-body">Oval faces suit almost any style; round faces love height and long layers; square faces are softened by waves and side-swept styles; heart faces are balanced by chin-length cuts and curtain bangs; and long faces suit a fringe with width at the sides. Read the full <a href="hairstyles-for-your-face-shape.html">guide to hairstyles for your face shape</a>, or let Trimly match them to you automatically.</div>
+          </details>
+          <details class="faq-item reveal">
             <summary>How does AI Style Match work? <span class="plus">+</span></summary>
             <div class="faq-body">You take a photo of your face. Trimly analyses your face shape, recommends flattering hairstyles, and generates a realistic try-on of any look on your own face — so you can see it before you ever sit in the chair.</div>
           </details>
@@ -527,6 +574,7 @@
           <a href="#features">Features</a>
           <a href="#gallery">Style gallery</a>
           <a href="#ai">AI Style Match</a>
+          <a href="hairstyles-for-your-face-shape.html">Hairstyle guide</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
